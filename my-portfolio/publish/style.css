@@ -277,12 +277,17 @@ p { margin: 0; }
 .flow b { color: var(--accent-text); margin-inline-end: var(--s1); }
 
 /* صور صفحة المشروع */
-.wide-figure { margin: 0 0 var(--s4); background: #F7E4EC; padding: var(--s3) var(--s2); }
+.wide-figure { margin: 0 0 var(--s4); background: var(--tint, #F7E4EC); padding: var(--s3) var(--s2); }
 .wide-figure img { width: 100%; }
 figcaption { font-size: 0.8125rem; color: var(--ink-soft); margin-top: var(--s1); }
 .detail-grid { display: grid; gap: var(--s3); margin-block: var(--s5); }
 .detail-grid figure { margin: 0; }
-.detail-grid img { width: 100%; background: #F7E4EC; }
+.detail-grid img { width: 100%; background: var(--tint, #F7E4EC); }
+.detail-grid.three { grid-template-columns: 1fr; }
+@media (min-width: 900px) {
+  .detail-grid.three { grid-template-columns: 1fr 1fr 0.8fr; align-items: start; }
+  .detail-grid.three .tall { grid-column: auto; grid-row: auto; }
+}
 @media (min-width: 900px) {
   .detail-grid { grid-template-columns: 1.4fr 1fr; }
   .detail-grid .tall { grid-column: 2; grid-row: 1 / span 2; }
