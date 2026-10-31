@@ -309,6 +309,14 @@ figcaption { font-size: 0.8125rem; color: var(--ink-soft); margin-top: var(--s1)
 .detail-stack img { width: 100%; background: #fff; border: 1px solid var(--line); }
 @media (min-width: 900px) { .detail-stack { grid-template-columns: repeat(3, 1fr); align-items: start; } }
 
+/* دراسة حالة بعدة أقسام */
+.case-part { padding-top: var(--s5); margin-top: var(--s5); border-top: 1px solid var(--line); }
+.part-title { font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.25rem); margin-bottom: var(--s4); }
+.case-part .facts { margin-top: 0; }
+.prose .flow a { color: inherit; }
+.detail-grid.two { grid-template-columns: 1fr; }
+@media (min-width: 640px) { .detail-grid.two { grid-template-columns: 1fr 1fr; } }
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
