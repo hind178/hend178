@@ -8,6 +8,7 @@ mkdir -p publish/assets/fonts
 cp ./*.html style.css publish/
 cp -r en publish/
 cp assets/*.webp assets/favicon.svg publish/assets/
+cp -r assets/og publish/assets/
 cp assets/fonts/*.woff2 assets/fonts/OFL-LICENSE.txt publish/assets/fonts/
 (cd publish && zip -qr ../publish.zip .)
 echo "publish/ جاهز:"; find publish -type f | sort; du -sh publish publish.zip
