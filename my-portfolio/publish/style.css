@@ -99,6 +99,11 @@ p { margin: 0; }
   font-size: 0.9375rem;
 }
 .site-head nav a { padding-block: var(--s1); display: inline-block; }
+.site-head { flex-wrap: wrap; row-gap: var(--s1); }
+.site-head nav ul { flex-wrap: wrap; align-items: center; }
+@media (max-width: 480px) {
+  .site-head nav ul { gap: var(--s2); font-size: 0.875rem; }
+}
 
 /* ===== البداية ===== */
 .hero {
@@ -180,6 +185,7 @@ p { margin: 0; }
 .card h3 { font-size: 1.25rem; }
 .card h3 a { text-decoration: none; }
 .card h3 a::after { content: " ←"; color: var(--accent-text); }
+[dir="ltr"] .card h3 a::after { content: " →"; }
 .card a.card-link:hover h3, .card h3 a:hover { text-decoration: underline; }
 .card .kind { font-size: 0.875rem; color: var(--ink-soft); }
 .card p.desc { font-size: 0.9375rem; }
@@ -316,6 +322,11 @@ figcaption { font-size: 0.8125rem; color: var(--ink-soft); margin-top: var(--s1)
 .prose .flow a { color: inherit; }
 .detail-grid.two { grid-template-columns: 1fr; }
 @media (min-width: 640px) { .detail-grid.two { grid-template-columns: 1fr 1fr; } }
+
+/* زر اللغة */
+.lang-switch { font-weight: 700; text-decoration: none; border: 1px solid var(--ink); padding: 2px var(--s1) !important; }
+.lang-switch:hover { background: var(--ink); color: var(--paper); }
+[lang="en"] body, body[lang="en"] { line-height: 1.65; }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
