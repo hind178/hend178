@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" role="img" aria-labelledby="t"><title id="t">نبع: قطرة ماء ودوائر متموّجة</title>
-<rect width="600" height="750" fill="#BFD3C6"/>
-<text x="48" y="84" font-family="Alexandria Variable, sans-serif" font-size="40" font-weight="700" fill="#1D3B2E">NABAA</text>
-<g fill="none" stroke="#1D3B2E"><ellipse cx="300" cy="520" rx="80" ry="22" stroke-width="5"/><ellipse cx="300" cy="520" rx="160" ry="44" stroke-width="4" stroke-opacity=".7"/><ellipse cx="300" cy="520" rx="240" ry="66" stroke-width="3" stroke-opacity=".4"/></g>
-<path d="M300 170 C300 170 220 290 220 350 A80 80 0 0 0 380 350 C380 290 300 170 300 170 Z" fill="#1D3B2E"/>
-<path d="M262 350 A40 40 0 0 0 300 392" stroke="#F1F0EA" stroke-width="6" fill="none" stroke-linecap="round"/>
-<circle cx="300" cy="520" r="7" fill="#FF652F"/>
-<text x="48" y="690" font-family="Alexandria Variable, sans-serif" font-size="18" fill="#1D3B2E" letter-spacing="2">CONTENT SITE / STUDY 03</text>
-</svg>

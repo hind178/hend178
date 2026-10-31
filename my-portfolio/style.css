@@ -140,9 +140,9 @@ p { margin: 0; }
 
 .hero-art {
   margin: 0;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
   box-shadow: 14px 14px 0 var(--paper-2);
-  max-width: 380px;
+  max-width: 520px;
   justify-self: center;
 }
 
@@ -171,7 +171,12 @@ p { margin: 0; }
 @media (min-width: 1000px) { .works { grid-template-columns: repeat(3, 1fr); } }
 
 .card { display: flex; flex-direction: column; gap: var(--s2); }
-.card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card.featured { grid-column: 1 / -1; }
+.card.featured img { aspect-ratio: 16 / 5.6; }
+@media (min-width: 900px) {
+  .card.featured { display: grid; grid-template-columns: 2fr 1fr; gap: var(--s4); align-items: center; }
+}
 .card h3 { font-size: 1.25rem; }
 .card h3 a { text-decoration: none; }
 .card h3 a::after { content: " ←"; color: var(--accent-text); }
@@ -270,6 +275,19 @@ p { margin: 0; }
   padding: var(--s2);
 }
 .flow b { color: var(--accent-text); margin-inline-end: var(--s1); }
+
+/* صور صفحة المشروع */
+.wide-figure { margin: 0 0 var(--s4); background: #F7E4EC; padding: var(--s3) var(--s2); }
+.wide-figure img { width: 100%; }
+figcaption { font-size: 0.8125rem; color: var(--ink-soft); margin-top: var(--s1); }
+.detail-grid { display: grid; gap: var(--s3); margin-block: var(--s5); }
+.detail-grid figure { margin: 0; }
+.detail-grid img { width: 100%; background: #F7E4EC; }
+@media (min-width: 900px) {
+  .detail-grid { grid-template-columns: 1.4fr 1fr; }
+  .detail-grid .tall { grid-column: 2; grid-row: 1 / span 2; }
+}
+.prose a { color: var(--accent-text); }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
