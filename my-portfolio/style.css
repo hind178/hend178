@@ -294,6 +294,21 @@ figcaption { font-size: 0.8125rem; color: var(--ink-soft); margin-top: var(--s1)
 }
 .prose a { color: var(--accent-text); }
 
+/* صفحة رول أب: الصورة الطويلة بجانب النص */
+.split { display: grid; gap: var(--s4); align-items: start; }
+.split-figure { margin: 0; background: var(--tint, #E9E7E4); padding: var(--s3); justify-self: center; width: 100%; max-width: 360px; }
+.split-figure img { width: 100%; box-shadow: 0 6px 18px #0002; }
+@media (min-width: 900px) {
+  .split { grid-template-columns: minmax(0, 1fr) 380px; gap: var(--s5); }
+  .split-figure { position: sticky; top: var(--s3); grid-column: 2; grid-row: 1; max-width: none; }
+  .split .prose { grid-column: 1; grid-row: 1; }
+  .split .prose h2:first-child { margin-top: 0; }
+}
+.detail-stack { display: grid; gap: var(--s3); margin-block: var(--s5); }
+.detail-stack figure { margin: 0; }
+.detail-stack img { width: 100%; background: #fff; border: 1px solid var(--line); }
+@media (min-width: 900px) { .detail-stack { grid-template-columns: repeat(3, 1fr); align-items: start; } }
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
