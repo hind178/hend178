@@ -666,3 +666,15 @@ figcaption { font-size: 0.8125rem; color: var(--ink-soft); margin-top: 10px; }
 
 /* Keep the opening image of a case study within one screen */
 .project-hero .wide-figure img { max-height: 70vh; object-fit: contain; }
+
+/* Social links in the contact card */
+.contact-card .social { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.contact-card .social a {
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 44px; padding: 0 16px;
+  border-radius: 999px; border: 1px solid rgba(255, 255, 255, .25);
+  color: #fff; text-decoration: none; font-size: .9375rem;
+  transition: background-color .2s, border-color .2s;
+}
+.contact-card .social a:hover { background: rgba(255, 255, 255, .1); border-color: #fff; }
+.contact-card .social svg { width: 18px; height: 18px; flex: none; }
