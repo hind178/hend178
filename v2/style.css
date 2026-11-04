@@ -385,6 +385,16 @@ main > .section:last-child, main > section.section[aria-labelledby="next-title"]
 main > section.section[aria-labelledby="next-title"] h2 { color: var(--paper); }
 main > section.section[aria-labelledby="next-title"] p { color: var(--dark-soft); }
 
+
+/* ---------- Social links ---------- */
+.social { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s1); list-style: none; padding: 0; margin: var(--s3) 0 0; }
+.social a { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--line); text-decoration: none; font-weight: 600; font-size: 0.9375rem; }
+.social a:hover { background: var(--orange); border-color: var(--orange); }
+.social svg { width: 20px; height: 20px; flex: none; }
+.social.on-dark { margin: 0; }
+.social.on-dark a { border-color: #ffffff33; color: var(--paper); }
+.social.on-dark a:hover { color: var(--ink); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
