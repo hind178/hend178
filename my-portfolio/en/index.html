@@ -3,163 +3,308 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hind Muhamed — Packaging &amp; Print Designer | Duhok</title>
-  <meta name="description" content="Portfolio of Hind Muhamed, a graphic designer in Duhok: packaging, product labels and print in Arabic, Kurdish and English.">
+  <title>Hind Muhamed — Graphic Designer in Duhok | Packaging, Profiles &amp; Print</title>
+  <meta name="description" content="Portfolio of Hind Muhamed, a graphic designer in Duhok: packaging and labels, company profiles, print and web design in Arabic, Kurdish and English.">
+  <link rel="canonical" href="https://hind178.github.io/hend178/en/">
+  <link rel="alternate" hreflang="en" href="https://hind178.github.io/hend178/en/">
+  <link rel="alternate" hreflang="ar" href="https://hind178.github.io/hend178/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hind Muhamed — Graphic Designer in Duhok">
+  <meta property="og:description" content="Packaging, branding, company profiles and digital design in Arabic, Kurdish and English.">
+  <meta property="og:image" content="https://hind178.github.io/hend178/assets/shireen-cover.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="theme-color" content="#FAF9F6">
   <link rel="preload" href="../assets/fonts/alexandria-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="../site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="wrap">
-    <header class="site-head">
-      <a class="brand" href="index.html">Hind Muhamed</a>
-      <nav aria-label="Main menu">
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html">Hind Muhamed<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><i></i></span>Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main menu">
         <ul>
           <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a class="lang-switch" href="../index.html" lang="ar" hreflang="ar">العربية</a></li>
         </ul>
       </nav>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <main id="main">
-    <!-- 1. Intro -->
+    <!-- 1. Hero -->
     <section class="wrap hero" aria-labelledby="hero-title">
       <div>
-        <p class="eyebrow">Graphic designer / Duhok, Kurdistan Region</p>
-        <h1 id="hero-title">Packaging and print<br><em>in three languages.</em></h1>
-        <p class="lede">I'm Hind. I design product labels, snack bags, cartons, roll-ups and booklets, company profiles and websites — in Arabic, Kurdish and English, organised and ready for print or publishing.</p>
-        <a class="btn" href="#work">See the work ↓</a>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Graphic designer · Duhok, Kurdistan Region</p>
+        <h1 id="hero-title">Design with <em>Purpose</em>, <em>Detail</em> &amp; Clarity.</h1>
+        <p class="lede">I’m Hind, a graphic designer based in Duhok, specializing in packaging, branding, company profiles, and digital design. I create thoughtful visual solutions that communicate clearly across Arabic, Kurdish, and English.</p>
+        <div class="btn-row">
+          <a class="btn" href="#work">View My Work <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn ghost" href="#contact">Start a Project</a>
+        </div>
+        <div class="hero-langs">
+          <span class="chip">Arabic</span><span class="chip">Kurdish</span><span class="chip">English</span>
+        </div>
       </div>
-      <figure class="hero-art">
-        <img src="../assets/majd-cover.webp" width="1200" height="900" alt="Majd Snack cheese-flavour bag: bold red background, large yellow logo, and a cartoon beaver sitting on a pile of cheese puffs.">
-      </figure>
+      <div class="hero-art">
+        <a href="shireen.html" style="--tint: linear-gradient(90deg, #E2EEF7, #F8E4ED)">
+          <img src="../assets/shireen-cover.webp" width="1600" height="560" fetchpriority="high" alt="Shireen kids' water cartons — blue with a baby boy, pink with a baby girl. View the Shireen project.">
+        </a>
+        <a href="majd.html" style="--tint: #F0DDD6">
+          <img src="../assets/majd-cover.webp" width="1200" height="900" alt="Majd Snack cheese-flavour bag: red background, yellow logo and a cartoon beaver. View the Majd Snack project.">
+        </a>
+        <a href="invesstep.html" style="--tint: #E6EFF0">
+          <img src="../assets/inv-cover.webp" width="1200" height="900" alt="INVESSTEP bilingual trading-education website on desktop and mobile. View the INVESSTEP project.">
+        </a>
+      </div>
     </section>
 
-    <!-- 2. Selected work -->
+    <!-- 2. Work -->
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <div class="section-head">
-          <h2 id="work-title">Selected work.</h2>
-          <span class="meta">10 projects / packaging, print, profiles, websites</span>
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker">Selected work</span>
+            <h2 id="work-title">Projects</h2>
+          </div>
+          <p>Packaging, company profiles, print and web — real projects, shown as they were designed.</p>
         </div>
 
-        <ul class="works">
-          <li class="card featured">
-            <a href="shireen.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/shireen-cover.webp" width="1600" height="560" alt="">
-            </a>
-            <div>
+        <div class="filters" role="group" aria-label="Filter projects by field">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All Projects<span class="n"></span></button>
+          <button class="filter" type="button" data-filter="packaging" aria-pressed="false">Packaging<span class="n"></span></button>
+          <button class="filter" type="button" data-filter="digital" aria-pressed="false">Digital Design<span class="n"></span></button>
+          <button class="filter" type="button" data-filter="print" aria-pressed="false">Print &amp; Profiles<span class="n"></span></button>
+        </div>
+        <p class="visually-hidden status" id="works-status" role="status" aria-live="polite" data-template="Showing {n} projects"></p>
+
+        <ul class="works" id="works">
+          <li class="card" data-cat="packaging print">
+            <div class="card-media contain" style="--tint: linear-gradient(90deg, #E2EEF7, #F8E4ED)">
+              <img src="../assets/shireen-cover.webp" width="1600" height="560" alt="Front faces of the two Shireen kids' cartons: blue with a baby boy and pink with a baby girl, each holding a water bottle." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Packaging + presentation</span>Label, two cartons, company profile</p>
               <h3><a href="shireen.html">Shireen — Gara Spring Water</a></h3>
-              <p class="kind"><span class="tag">Packaging + presentation</span>Label, two cartons, company profile</p>
               <p class="desc">Three pieces for one client: a kids' bottle label with English and Kurdish faces, a 12-bottle carton in matching pink and blue versions, and a 10-slide company profile.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
             </div>
           </li>
-          <li class="card">
-            <a href="invesstep.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/inv-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="invesstep.html">INVESSTEP</a></h3>
-            <p class="kind"><span class="tag">Website</span>Bilingual trading-education website</p>
-            <p class="desc">A homepage in English and Arabic with one toggle, a learning path in numbered steps, and a tone of trust instead of profit promises.</p>
+          <li class="card" data-cat="digital">
+            <div class="card-media" style="--tint: #E6EFF0">
+              <img src="../assets/inv-cover.webp" width="1200" height="900" alt="The INVESSTEP homepage shown on desktop and mobile screens." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Website</span>Bilingual trading-education website</p>
+              <h3><a href="invesstep.html">INVESSTEP</a></h3>
+              <p class="desc">A homepage in English and Arabic with one toggle, a learning path in numbered steps, and a tone of trust instead of profit promises.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <a href="sarav.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/sarav-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="sarav.html">SARAV</a></h3>
-            <p class="kind"><span class="tag">Company profile</span>Contractor profile, 26 slides</p>
-            <p class="desc">Charcoal, beige and machinery amber, bold key figures, and project case studies on one template that makes them easy to compare.</p>
+          <li class="card" data-cat="print">
+            <div class="card-media" style="--tint: #E9E4D8">
+              <img src="../assets/sarav-cover.webp" width="1200" height="900" alt="Three slides of the SARAV company profile: the cover with a loader at an excavation site, the THINK. DESIGN. BUILD. slide, and a case-study slide." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Company profile</span>Contractor profile, 26 slides</p>
+              <h3><a href="sarav.html">SARAV</a></h3>
+              <p class="desc">Charcoal, beige and machinery amber, bold key figures, and project case studies on one template that makes them easy to compare.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <a href="majd.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/majd-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="majd.html">Majd Snack</a></h3>
-            <p class="kind"><span class="tag">Packaging</span>Snack bags in two flavours</p>
-            <p class="desc">A fixed chunky yellow logo, with a background that changes per flavour: red for cheese with the beaver character, blue for chili &amp; cheese.</p>
+          <li class="card" data-cat="packaging">
+            <div class="card-media" style="--tint: #F0DDD6">
+              <img src="../assets/majd-cover.webp" width="1200" height="900" alt="Majd Snack cheese-flavour bag: bold red background, large yellow logo, and a cartoon beaver sitting on a pile of cheese puffs." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Packaging</span>Snack bags in two flavours</p>
+              <h3><a href="majd.html">Majd Snack</a></h3>
+              <p class="desc">A fixed chunky yellow logo, with a background that changes per flavour: red for cheese with the beaver character, blue for chili &amp; cheese.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <a href="badinan.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/badinan-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="badinan.html">Badinan Soft</a></h3>
-            <p class="kind"><span class="tag">Print</span>Company roll-up for a software firm</p>
-            <p class="desc">One clear top-to-bottom sequence: logo, about us, products as icons, then contact details and a QR code at the bottom.</p>
+          <li class="card" data-cat="print">
+            <div class="card-media" style="--tint: #E9E8E4">
+              <img src="../assets/badinan-cover.webp" width="1200" height="900" alt="The Badinan Soft roll-up standing upright: red and grey logo at the top, about-us text and product icons in the middle, contact details at the bottom." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Print</span>Company roll-up for a software firm</p>
+              <h3><a href="badinan.html">Badinan Soft</a></h3>
+              <p class="desc">One clear top-to-bottom sequence: logo, about us, products as icons, then contact details and a QR code at the bottom.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <a href="prayer.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/prayer-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="prayer.html">Ablution &amp; Prayer Basics</a></h3>
-            <p class="kind"><span class="tag">Booklet</span>A5, in Arabic, for children</p>
-            <p class="desc">A 9-page booklet that teaches children ablution and prayer through illustrations and numbered steps, in a calm blue with large type.</p>
+          <li class="card" data-cat="print">
+            <div class="card-media" style="--tint: #E3E8F4">
+              <img src="../assets/prayer-cover.webp" width="1200" height="900" alt="Three pages of the Ablution &amp; Prayer Basics booklet: the cover with two children in front of a mosque, and the illustrated, numbered ablution and prayer pages." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Booklet</span>A5, in Arabic, for children</p>
+              <h3><a href="prayer.html">Ablution &amp; Prayer Basics</a></h3>
+              <p class="desc">A 9-page booklet that teaches children ablution and prayer through illustrations and numbered steps, in a calm blue with large type.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <a href="play.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/play-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="play.html">Play &amp; Learn 2025</a></h3>
-            <p class="kind"><span class="tag">Document</span>Proposal for a children's centre</p>
-            <p class="desc">A 10-page proposal — introduction, sections, budget, marketing, timeline — held together by a hexagon system from cover to back.</p>
+          <li class="card" data-cat="print">
+            <div class="card-media" style="--tint: #F1EFF2">
+              <img src="../assets/play-cover.webp" width="1200" height="900" alt="Three pages of the Play &amp; Learn 2025 proposal: the cover with photos of children in hexagon shapes, the introduction page and the budget page." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Document</span>Proposal for a children's centre</p>
+              <h3><a href="play.html">Play &amp; Learn 2025</a></h3>
+              <p class="desc">A 10-page proposal — introduction, sections, budget, marketing, timeline — held together by a hexagon system from cover to back.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <a href="xan.html" tabindex="-1" aria-hidden="true">
-              <img src="../assets/xan-cover.webp" width="1200" height="900" alt="" loading="lazy">
-            </a>
-            <h3><a href="xan.html">Xan Bazar × Hil 12</a></h3>
-            <p class="kind"><span class="tag">Print</span>Roll-up in Kurdish and Arabic</p>
-            <p class="desc">The offer in three steps — shop, collect points, invest — each with its own colour and icon, with both languages side by side.</p>
+          <li class="card" data-cat="print">
+            <div class="card-media" style="--tint: #E7EAE7">
+              <img src="../assets/xan-cover.webp" width="1200" height="900" alt="The Xan Bazar × Hil 12 roll-up: a headline in Kurdish and Arabic and three coloured steps with hexagon icons." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Print</span>Roll-up in Kurdish and Arabic</p>
+              <h3><a href="xan.html">Xan Bazar × Hil 12</a></h3>
+              <p class="desc">The offer in three steps — shop, collect points, invest — each with its own colour and icon, with both languages side by side.</p>
+              <span class="card-cta" aria-hidden="true">View Project <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <img src="../assets/hildan-cover.webp" width="1200" height="900" alt="Front of the Hildan Holding Group business card: black logo on a golden background with a cracked-texture edge." loading="lazy">
-            <h3>Hildan Holding Group</h3>
-            <p class="kind"><span class="tag">Identity</span>Business card</p>
-            <p class="desc">Earthy gold with black, plus faint cracks and building shapes that tie the card to investment and construction.</p>
+          <li class="card" data-cat="print">
+            <div class="card-media" style="--tint: #2A2A2A">
+              <img src="../assets/hildan-cover.webp" width="1200" height="900" alt="Front of the Hildan Holding Group business card: black logo on a golden background with a cracked-texture edge." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Identity</span>Business card</p>
+              <h3><button type="button" data-lightbox="../assets/hildan-cover.webp">Hildan Holding Group</button></h3>
+              <p class="desc">Earthy gold with black, plus faint cracks and building shapes that tie the card to investment and construction.</p>
+              <span class="card-cta" aria-hidden="true">View Design <span class="arr">→</span></span>
+            </div>
           </li>
-          <li class="card">
-            <img src="../assets/puffin-cover.webp" width="1200" height="900" alt="Puffin Rock cheese snack bag: a blue and yellow watercolour background, the teal Puffin Rock logo, two cartoon puffins above a pile of snacks and cheese cubes, and a hanging sign reading Cheese Flavour." loading="lazy">
-            <h3>Puffin Rock</h3>
-            <p class="kind"><span class="tag">Packaging</span>Cheese-flavour snack bag</p>
-            <p class="desc">A blue and yellow watercolour background, with the flavour on a hanging sign. The characters and name are from the Puffin Rock series; their rights belong to their owners.</p>
+          <li class="card" data-cat="packaging">
+            <div class="card-media" style="--tint: #DDEAED">
+              <img src="../assets/puffin-cover.webp" width="1200" height="900" alt="Puffin Rock cheese snack bag: a blue and yellow watercolour background, the teal Puffin Rock logo, two cartoon puffins above a pile of snacks and cheese cubes, and a hanging sign reading Cheese Flavour." loading="lazy" decoding="async">
+            </div>
+            <div class="card-body">
+              <p class="card-kind"><span class="tag">Packaging</span>Cheese-flavour snack bag</p>
+              <h3><button type="button" data-lightbox="../assets/puffin-cover.webp">Puffin Rock</button></h3>
+              <p class="desc">A blue and yellow watercolour background, with the flavour on a hanging sign. The characters and name are from the Puffin Rock series; their rights belong to their owners.</p>
+              <span class="card-cta" aria-hidden="true">View Design <span class="arr">→</span></span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="more-wrap">
+          <button class="btn ghost" id="more-btn" type="button" aria-controls="works" aria-expanded="false" data-more="Explore More Projects" data-less="Show Fewer Projects"><span class="label">Explore More Projects</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker">Services</span>
+            <h2 id="services-title">What I can design for you</h2>
+          </div>
+          <p>Every service is shown in the projects above — the examples link to them.</p>
+        </div>
+        <ul class="services">
+          <li class="service reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg></span>
+            <h3>Packaging &amp; Label Design</h3>
+            <p>Product labels, packaging and cartons, with print files prepared for production.</p>
+            <p class="eg">e.g. <a href="shireen.html">Shireen</a>, <a href="majd.html">Majd Snack</a></p>
+          </li>
+          <li class="service reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M7 12l3-3 2.5 2.5L17 8"/></svg></span>
+            <h3>Company Profiles &amp; Presentations</h3>
+            <p>Company profiles and presentations that make information easy to follow.</p>
+            <p class="eg">e.g. <a href="sarav.html">SARAV</a>, <a href="shireen.html#profile">Shireen profile</a></p>
+          </li>
+          <li class="service reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="15" height="11" rx="1.5"/><rect x="15.5" y="9" width="6" height="11" rx="1.5"/><path d="M2.5 7.5h15M6 19h6"/></svg></span>
+            <h3>Web &amp; Digital Design</h3>
+            <p>Website interfaces and digital content, designed for desktop and mobile.</p>
+            <p class="eg">e.g. <a href="invesstep.html">INVESSTEP</a></p>
+          </li>
+          <li class="service reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v18H7z"/><path d="M10 7h4M10 10.5h4M9.5 15h5M5 21h14"/></svg></span>
+            <h3>Print &amp; Marketing Materials</h3>
+            <p>Booklets, roll-up stands and other marketing materials for print.</p>
+            <p class="eg">e.g. <a href="badinan.html">Badinan Soft</a>, <a href="xan.html">Xan Bazar</a>, <a href="prayer.html">prayer booklet</a></p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- 3. About -->
+    <!-- 4. About -->
     <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid">
-        <div>
-          <div class="section-head"><h2 id="about-title">About.</h2></div>
-          <p>I'm a graphic designer from Duhok. I work on things that get printed and held — bottle labels, product bags, cartons, roll-ups, business cards and booklets — and on company profiles and website interfaces.</p>
-          <p>Most of my work has to speak more than one language. So I care about fitting Arabic, Kurdish and English onto the same surface without crowding — and about the mandatory details like ingredients and barcodes.</p>
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <span class="kicker">About me</span>
+            <h2 id="about-title" class="visually-hidden">About me</h2>
+            <p class="big">I'm a graphic designer from Duhok. I work on things that get printed and held — bottle labels, product bags, cartons, roll-ups, business cards and booklets — and on company profiles and website interfaces.</p>
+            <p>Most of my work has to speak more than one language. So I care about fitting Arabic, Kurdish and English onto the same surface without crowding — and about the mandatory details like ingredients and barcodes.</p>
+            <p>On the pieces shown here, that means a bottle label with separate English and Kurdish faces, a roll-up that gives Kurdish and Arabic equal weight, and a website that flips fully from English to Arabic with one toggle.</p>
+          </div>
+          <div class="reveal">
+            <h3 class="visually-hidden">Areas of expertise</h3>
+            <ul class="skills">
+              <li><div><strong>Graphic Design</strong><span>Colours, type and a key image chosen to suit each product and audience.</span></div></li>
+              <li><div><strong>Packaging &amp; Label Design</strong><span>Bottle labels, snack bags and cartons, with ingredients, nutrition and barcodes placed clearly.</span></div></li>
+              <li><div><strong>Corporate Profiles</strong><span>Company profiles, presentations and proposals that make information easy to compare.</span></div></li>
+              <li><div><strong>Digital Design</strong><span>Website interfaces for desktop and mobile.</span></div></li>
+              <li><div><strong>Multilingual Design</strong><span>Arabic, Kurdish and English on one piece, in right-to-left and left-to-right layouts.</span></div></li>
+              <li><div><strong>Print Production</strong><span>Designing at real size, checking text and margins, and delivering the final file.</span></div></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 class="meta" style="margin-bottom: var(--s2)">How I work</h3>
-          <ol class="steps">
-            <li><div><strong>Brief</strong>The product, the audience, the size and the languages needed.</div></li>
-            <li><div><strong>Direction</strong>Colours, type and a key image that suit the product.</div></li>
-            <li><div><strong>Design</strong>Laying out content and mandatory information at real size.</div></li>
-            <li><div><strong>Print-ready</strong>Checking text and margins, then delivering the final file.</div></li>
-          </ol>
-        </div>
+
+        <h3 class="sub-title reveal">How I work</h3>
+        <ol class="steps reveal">
+          <li><strong>Brief</strong>The product, the audience, the size and the languages needed.</li>
+          <li><strong>Direction</strong>Colours, type and a key image that suit the product.</li>
+          <li><strong>Design</strong>Laying out content and mandatory information at real size.</li>
+          <li><strong>Print-ready</strong>Checking text and margins, then delivering the final file.</li>
+        </ol>
       </div>
     </section>
 
-    <!-- 4. Contact -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <!-- 5. Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
-        <div class="section-head"><h2 id="contact-title">Have a product that needs packaging or print?</h2></div>
-        <p>Send a short description: the product, the size, the languages you need, and your print date.</p>
-        <a class="mail" href="mailto:hindmuhamed.178@gmail.com">hindmuhamed.178@gmail.com</a>
+        <div class="contact-card reveal">
+          <span class="kicker">Contact</span>
+          <h2 id="contact-title">Let’s Create Something Meaningful.</h2>
+          <p>Send a short description: the product or project, the size, the languages you need, and your deadline.</p>
+          <a class="mail" href="mailto:hindmuhamed.178@gmail.com">hindmuhamed.178@gmail.com</a>
+          <div class="btn-row">
+            <a class="btn" href="mailto:hindmuhamed.178@gmail.com?subject=New%20project%20enquiry">Send Email <span class="arr" aria-hidden="true">→</span></a>
+            <button class="btn ghost" id="copy-email" type="button" data-email="hindmuhamed.178@gmail.com" data-ok="Email copied to clipboard." data-fail="Couldn't copy — please select the address above.">Copy Email</button>
+          </div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
       </div>
     </section>
   </main>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+    <button class="close" type="button" aria-label="Close">×</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption><strong id="lb-title" data-lb-title></strong><span data-lb-text></span></figcaption>
+    </figure>
+  </dialog>
 
   <footer class="wrap site-foot">
     <span>© 2026 Hind Muhamed — Duhok</span>
