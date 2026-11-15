@@ -30,8 +30,8 @@ Vertical 9:16, 1080×1920, 30 fps, H.264 + AAC, 161 s, timed to the supplied nar
 pip install skia-python opencv-python-headless scipy numpy   # Linux also needs libegl1
 python3 src/render.py preview check.png 5 30 90 120          # contact sheet at given seconds
 python3 src/render.py video build/ 4                          # picture (4 processes)
-python3 src/audio.py assets/audio/final_mix.flac assets/audio/music_sfx_bed.flac
-ffmpeg -i build/picture.mp4 -i assets/audio/final_mix.flac -c:v copy -c:a aac -b:a 192k -shortest out.mp4
+python3 src/audio.py build/final_mix.wav build/music_sfx_bed.wav
+ffmpeg -i build/picture.mp4 -i build/final_mix.wav -c:v copy -c:a aac -b:a 192k -shortest out.mp4
 ```
 
 To change a shot, edit its function or its row in `SHOTS` in `src/shots.py`, then re-render (delete the matching `seg_*.mp4` files in the build folder).
