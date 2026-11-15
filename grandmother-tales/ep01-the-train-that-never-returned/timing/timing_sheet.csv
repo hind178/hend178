@@ -1,0 +1,25 @@
+n,shot,start,end,frame_in,frame_out,transition,narration,fn
+1,1982 - an old station in Japan,0.00,5.32,0,159,cut,سنة 1982 بمحطة قطار قديمة باليابان,b01_establish
+2,An old man named Haru,5.32,7.86,160,235,dissolve 0.30s,كان أكو عجوز اسم هارو,b02_haru_walks
+3,"Every day before sunset, the same place",7.86,12.68,236,379,cut,كل يوم قبل لا تغيب الشمس يجي يجعد بنفس المكان,b03_sits
+4,A small paper crane beside him,12.68,15.44,380,462,cut,ويحط يما طير صغير من الورق,b04_crane
+5,Waiting for the last train,15.44,18.22,463,546,cut,وينتظر آخر قطار,b05_waits
+6,Nobody knew whom he waited for,18.22,21.64,547,648,cut,بس ماحد كان يعرف هو من ينتظر,b06_nobody_knew
+7,Maryam approaches,21.64,26.88,649,805,cut,بيوم طفلة عراقية اسمها مريم قربت منه وسألةه,b07_maryam_comes
+8,"""Grandpa, why do you come every day?""",26.88,30.20,806,905,cut,جدي يش كل يوم تجي لهنا,b08_why
+9,"""I am waiting for my son""",30.20,32.86,906,985,cut,ابتسم وقال أن تظر ابني,b09_my_son
+10,Twenty years ago he left (memory),32.86,38.30,986,1148,cut,قبل 20 سنة زعل مني وراح وعدني يرجع بيوم,b10_twenty_years
+11,Maryam takes the crane,38.30,41.00,1149,1229,dissolve 0.30s,مريم أخذت القير الورقي,b11_takes_crane
+12,Inside: an old address,41.00,44.44,1230,1332,cut,ومن فتحة لجت بداخل عنوان قديم,b12_address
+13,She writes a letter,44.44,46.02,1333,1380,dissolve 0.30s,كتبت رسالة,b13_writes
+14,"""Your father waits for you every day...""",46.02,51.18,1381,1534,cut,أبوك ينتظرك كل يوم ويمكن ما بقى عند أيام هواية,b14_letter
+15,"Weeks pass, no reply",51.18,54.44,1535,1632,dissolve 0.30s,مرة أسابيع وما أجي أي جواب,b15_weeks
+16,A cold night: the last train,54.44,57.58,1633,1726,dissolve 0.30s,وبليلة باردة وصل آخر قطار,b16_train_arrives
+17,"A man steps down, a paper crane in hand",57.58,61.24,1727,1836,cut,نزل مننا رجل وبإيدة طير من الورق,b17_man_steps
+18,He comes to the old man,61.24,63.36,1837,1900,cut,قرب من العجوز وقال,b18_approach
+19,"""Father, I thought you didn't want to see me""",63.36,66.62,1901,1998,cut,أبوية عبالي انت متريد تشوفني,b19_father
+20,Haru embraces him and weeps,66.62,70.44,1999,2112,cut,هارو حظنة وبتش مثل الطفل,b20_embrace
+21,"Next day, Maryam comes",70.44,73.42,2113,2202,dissolve 0.50s,ثاني يوم اجت مريم للمحطة,b21_next_day
+22,"For the first time, the bench is empty",73.42,76.34,2203,2289,cut,لأول مرة المقعد كان فارغ,b22_empty
+23,"Two paper cranes, side by side",76.34,81.62,2290,2448,dissolve 0.30s,بس فوقها كان أكو طيرين من الورق واحد يما الثاني,b23_two_cranes
+24,His son finally came home,81.62,91.00,2449,2729,dissolve 0.60s,ومن ذاك اليوم هارو ماعد ينتظر القطار الأخير لأن ابنة أخيرا رجع للبيت,b24_home
