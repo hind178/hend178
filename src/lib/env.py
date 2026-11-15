@@ -239,7 +239,12 @@ def build_street(root):
         cx = xs + w / 2
         door_mat = M['metal_teal'] if abs(cx - HOME_DOOR[0]) < w / 2 else None
         if abs(cx - HOME_DOOR[0]) < w / 2:
-            home_objs = house_facade('home', HOME_DOOR[0], -3.0, w, 6.6, 1, M, coll, seed=42, door=False)
+            # family home centred on its door; narrow neighbour fills the rest of the slot (no overlaps)
+            hw_ = 7.4
+            home_objs = house_facade('home', HOME_DOOR[0], -3.0, hw_, 6.6, 1, M, coll, seed=42, door=False)
+            gap = (HOME_DOOR[0] - hw_ / 2) - xs
+            if gap > 0.5:
+                house_facade('near_alley', xs + gap / 2, -3.0, gap - 0.1, 5.6, 1, M, coll, seed=77, door=False)
             hm = M['metal_teal']
             fr = U.rbox('home_doorframe', (1.6, 0.14, 2.5), (HOME_DOOR[0], -2.95, 1.25), bevel=0.02, collection=coll, mat_=M['plaster'])
             dr = U.rbox('home_door', (1.3, 0.08, 2.25), (HOME_DOOR[0] - 0.65, -2.9, 1.125 + 0.15), bevel=0.02, collection=coll, mat_=hm)
@@ -254,10 +259,17 @@ def build_street(root):
                            mat_=U.mat('doorway_interior', (0.12, 0.09, 0.07), rough=1.0))
         else:
             house_facade(f'near{i}', cx, -3.0, w - 0.15, random.Random(i).uniform(5.8, 7.0), 1, M, coll, seed=i)
-        w2 = random.Random(i + 50).uniform(7, 10)
-        if abs(xs + 2) > 4 and not (-5 < xs < 4):
+        w2 = w   # same slot width as the near side: far houses never overlap
+        if not (xs < 3.1 and xs + w2 > -3.1):
             house_facade(f'far{i}', xs + w2 / 2, 9.5, w2 - 0.15, random.Random(i + 9).uniform(5.8, 7.2), -1, M, coll, seed=i + 100)
+        else:   # slot shared with the shop: fill only what is left on either side
+            for k, (a_, b_) in enumerate(((xs, -3.05), (3.05, xs + w2))):
+                if b_ - a_ > 1.0:
+                    house_facade(f'far{i}_{k}', (a_ + b_) / 2, 9.5, b_ - a_ - 0.1, 6.4 + 0.5 * k, -1, M, coll,
+                                 seed=i + 200 + k, door=(b_ - a_) > 3.5)
         xs += w
+        if abs(cx - HOME_DOOR[0]) < w / 2:
+            xs = HOME_DOOR[0] + 7.4 / 2 + 0.05
         i += 1
     for k, px in enumerate((-30, -9, 13, 31)):
         palm(f'palm{k}', (px, 12.5 + k % 2, 0), coll, M, h=7 + k % 3, seed=k)
