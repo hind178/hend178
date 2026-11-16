@@ -442,14 +442,15 @@ class Story:
                  focus=(hi, 'head'), fstop=2.8)
     def s09(self, f0, f1):
         mo = self.mother
-        self.place(mo, f0, (106.9, 4.0), FACE_Y, 0)
+        self.place(mo, f0, (107.5, 4.05), FACE_NX - 0.15, 0)   # side-on to the stove so her face reads
         A.pose(mo, f0, A.COOK); A.expr(mo, f0, 'gentle')
         for i, f in enumerate(range(f0, f1, 10)):
             A.kb(mo, 'forearm.R', f, rot=(-1.2, 0, -0.4 + 0.25 * math.sin(i * 1.3)))
         A.breathe(mo, f0, f1, spine_base=(0.12, 0, 0))
         self.steam_anim(f0, f1, Vector((106.85, 4.6, 1.15)))
         self.common(f0, f1, [mo], 9)
-        self.cam('S09', f0, f1, (108.3, 2.6, 1.65), (106.9, 4.5, 1.15), (107.85, 3.0, 1.55), (106.9, 4.5, 1.15), lens=30,
+        A.look(mo, f0 + 40, 0.35, 0.05); A.look(mo, f1 - 20, 0, 0.25)
+        self.cam('S09', f0, f1, (106.35, 2.55, 1.6), (107.25, 4.2, 1.3), (106.45, 2.85, 1.55), (107.3, 4.2, 1.3), lens=30,
                  focus=(mo, 'head'), fstop=3.5)
 
     def steam_anim(self, f0, f1, base):
@@ -632,16 +633,16 @@ class Story:
 
     def s21(self, f0, f1):
         hu, sk = self.huda, self.shopkeeper
-        self.place(sk, f0, (1.0, 11.0), FACE_NX, HZ)
-        self.place(hu, f0, (0.25, 10.95), FACE_X, HZ)
+        self.place(sk, f0, (1.3, 11.05), FACE_NX + 0.35, HZ)    # both turned a little towards the camera
+        self.place(hu, f0, (0.25, 10.95), FACE_X - 0.35, HZ)
         A.pose(sk, f0, A.P(upperarm_R=(-0.7, 0, 0.1), forearm_R=(-0.9, 0, 0)))
-        A.pose(sk, f0 + 45, A.GIVE_COINS); self.vis(self.bag_shop, f0, True); self.vis(self.bag_shop, f0 + 70, False)
+        A.pose(sk, f0 + 45, A.GIVE_COINS); self.vis(self.bag_shop, f0, False)   # hand-over bag hidden (rigid attach reads badly)
         A.pose(hu, f0 + 55, A.TAKE_COINS); A.pose(hu, f0 + 70, A.CARRY_BAG_L); self.vis(self.bag_huda, f0 + 70, True)
         A.expr(sk, f0, 'smile'); A.talk(sk, f0 + 5, f0 + 40, seed=21)
         A.expr(hu, f0, 'smile'); A.look(hu, f0, 0.2, 0.35)
         self.common(f0, f1, [hu, sk], 21)
-        self.cam('S21', f0, f1, (-1.5, 12.9, 1.55), (0.6, 10.95, 1.0), (-1.3, 12.6, 1.5), (0.6, 10.95, 1.0), lens=30,
-                 focus=(hu, 'head'), fstop=2.8)
+        self.cam('S21', f0, f1, (0.5, 9.5, 1.4), (0.68, 11.0, 1.25), (0.55, 9.65, 1.38), (0.68, 11.0, 1.25), lens=20,
+                 focus=(hu, 'head'), fstop=4.0)
 
     def s22(self, f0, f1):
         hu, hi = self.huda, self.hind
@@ -941,10 +942,10 @@ class Story:
         self._doorstep(f0)
         A.pose(hi, f0, A.CLUTCH_RABBIT); self.vis(self.rabbit_held, f0, True); A.expr(hi, f0, 'sad')
         A.look(hi, f0 + 20, -0.6, 0.15)
-        self.place(nb, f0, (hx + 3.6, -0.9), FACE_NX, HZ)
-        self.walk(nb, f0, f1 - 5, [(hx + 3.6, -0.9), (hx + 0.6, -1.6), (hx, -1.95)])
+        self.place(nb, f0, (hx + 2.3, -1.05), FACE_NX, HZ)
+        self.walk(nb, f0, f1 - 5, [(hx + 2.3, -1.05), (hx + 0.7, -1.6), (hx, -1.95)])
         A.expr(nb, f0, 'sad')
-        self.cam('S44', f0, f1, (hx - 2.2, -1.3, 1.25), (hx + 0.6, -1.9, 1.0), (hx - 2.0, -1.2, 1.2), (hx + 0.1, -2.2, 0.95), lens=28,
+        self.cam('S44', f0, f1, (hx - 1.5, -1.0, 1.3), (hx + 0.9, -1.8, 1.1), (hx - 1.3, -1.1, 1.2), (hx + 0.3, -2.1, 1.0), lens=32,
                  focus=(nb, 'head'), fstop=3.2)
 
     def _kneel_pair(self, f0):
@@ -1169,7 +1170,7 @@ def main():
         fh.write('# Episode 01 — The Promise · timestamped scene map\n\n'
                  'Master narration: 190.85 s · 30 fps · frames 1–5726 · 1080×1920 (9:16)\n\n')
         fh.write(SL.scene_map_md() + '\n')
-    bpy.ops.wm.save_as_mainfile(filepath=os.path.join(EP, 'story.blend'), compress=True)
+    bpy.ops.wm.save_as_mainfile(filepath=os.environ.get('STORY_OUT', os.path.join(EP, 'story.blend')), compress=True)
     print('STORY OK')
 
 
