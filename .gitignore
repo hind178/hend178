@@ -1,0 +1,5 @@
+episode_01/frames/
+__pycache__/
+*.blend1
+*.wav
+episode_01/audio/narr16k.wav
