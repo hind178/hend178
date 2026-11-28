@@ -1,0 +1,282 @@
+{
+  "status": "approximate editorial timing; verify Arabic narration before final",
+  "shots": [
+    {
+      "start": 0,
+      "end": 10,
+      "background": "university_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.43,
+          0.83,
+          0.39,
+          "idle"
+        ]
+      ],
+      "event": "Hind expects to be alone"
+    },
+    {
+      "start": 10,
+      "end": 16,
+      "background": "computer_lab_clean",
+      "actors": [],
+      "event": "Institute studies"
+    },
+    {
+      "start": 16,
+      "end": 23,
+      "background": "institute_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.34,
+          0.82,
+          0.37,
+          "walk"
+        ]
+      ],
+      "event": "Institute to university"
+    },
+    {
+      "start": 23,
+      "end": 35,
+      "background": "computer_lab_clean",
+      "actors": [],
+      "event": "Trip announcement and disappointment"
+    },
+    {
+      "start": 35,
+      "end": 48,
+      "background": "campus_walk_clean",
+      "actors": [
+        [
+          "Loreen",
+          "standing",
+          0.34,
+          0.83,
+          0.4,
+          "walk"
+        ],
+        [
+          "Lizette",
+          "standing",
+          0.66,
+          0.83,
+          0.37,
+          "walk"
+        ]
+      ],
+      "event": "Loreen and Lizette friendship"
+    },
+    {
+      "start": 48,
+      "end": 60,
+      "background": "campus_garden_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.2,
+          0.85,
+          0.37,
+          "idle"
+        ],
+        [
+          "Loreen",
+          "standing",
+          0.6,
+          0.79,
+          0.34,
+          "idle"
+        ],
+        [
+          "Lizette",
+          "standing",
+          0.82,
+          0.79,
+          0.32,
+          "idle"
+        ]
+      ],
+      "event": "Hind is a classmate"
+    },
+    {
+      "start": 60,
+      "end": 70,
+      "background": "university_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.28,
+          0.84,
+          0.38,
+          "walk"
+        ],
+        [
+          "Loreen",
+          "standing",
+          0.63,
+          0.81,
+          0.38,
+          "idle"
+        ],
+        [
+          "Lizette",
+          "standing",
+          0.82,
+          0.81,
+          0.35,
+          "idle"
+        ]
+      ],
+      "event": "Arrival at the gate"
+    },
+    {
+      "start": 70,
+      "end": 80,
+      "background": "university_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.25,
+          0.84,
+          0.4,
+          "idle"
+        ],
+        [
+          "Loreen",
+          "greeting",
+          0.53,
+          0.84,
+          0.43,
+          "idle"
+        ],
+        [
+          "Lizette",
+          "greeting",
+          0.78,
+          0.84,
+          0.38,
+          "idle"
+        ]
+      ],
+      "event": "Loreen welcomes Hind"
+    },
+    {
+      "start": 80,
+      "end": 86,
+      "background": "bus_interior_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.3,
+          0.65,
+          0.27,
+          "portrait"
+        ],
+        [
+          "Loreen",
+          "talking",
+          0.6,
+          0.65,
+          0.29,
+          "portrait"
+        ]
+      ],
+      "event": "Bus seating proposal, close-up staging"
+    },
+    {
+      "start": 86,
+      "end": 91,
+      "background": "bus_interior_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.3,
+          0.65,
+          0.27,
+          "portrait"
+        ],
+        [
+          "Lizette",
+          "standing",
+          0.6,
+          0.65,
+          0.27,
+          "portrait"
+        ]
+      ],
+      "event": "Seat rotation"
+    },
+    {
+      "start": 91,
+      "end": 100,
+      "background": "bus_interior_clean",
+      "actors": [
+        [
+          "Hind",
+          "talking",
+          0.3,
+          0.65,
+          0.27,
+          "portrait"
+        ],
+        [
+          "Loreen",
+          "standing",
+          0.6,
+          0.65,
+          0.29,
+          "portrait"
+        ]
+      ],
+      "event": "Loreen refuses to leave Hind alone"
+    },
+    {
+      "start": 100,
+      "end": 103,
+      "background": "hotel_exterior_clean",
+      "actors": [],
+      "event": "Journey transition"
+    },
+    {
+      "start": 103,
+      "end": 107.075875,
+      "background": "hotel_lobby_clean",
+      "actors": [
+        [
+          "Hind",
+          "standing",
+          0.27,
+          0.71,
+          0.3,
+          "idle"
+        ],
+        [
+          "Loreen",
+          "standing",
+          0.51,
+          0.71,
+          0.33,
+          "idle"
+        ],
+        [
+          "Lizette",
+          "standing",
+          0.75,
+          0.71,
+          0.29,
+          "idle"
+        ]
+      ],
+      "event": "Hotel arrival cliffhanger"
+    }
+  ]
+}

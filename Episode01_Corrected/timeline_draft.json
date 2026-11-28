@@ -1,0 +1,61 @@
+{
+  "audio_duration_seconds": 107.075875,
+  "status": "approximate editorial plan; align to actual narration before rendering",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 10,
+      "event": "Hind alone near bus"
+    },
+    {
+      "start": 10,
+      "end": 20,
+      "event": "Institute studies and university entry"
+    },
+    {
+      "start": 20,
+      "end": 30,
+      "event": "Trip announcement"
+    },
+    {
+      "start": 30,
+      "end": 40,
+      "event": "Two friends decline"
+    },
+    {
+      "start": 40,
+      "end": 50,
+      "event": "Loreen and Lizette friendship"
+    },
+    {
+      "start": 50,
+      "end": 60,
+      "event": "Hind is a classmate"
+    },
+    {
+      "start": 60,
+      "end": 70,
+      "event": "Arrival at university gate"
+    },
+    {
+      "start": 70,
+      "end": 80,
+      "event": "Loreen welcomes Hind"
+    },
+    {
+      "start": 80,
+      "end": 90,
+      "event": "Bus seating proposal"
+    },
+    {
+      "start": 90,
+      "end": 100,
+      "event": "Loreen refuses to leave Hind alone"
+    },
+    {
+      "start": 100,
+      "end": 107.075875,
+      "event": "Hotel cliffhanger"
+    }
+  ]
+}

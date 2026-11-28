@@ -1,0 +1,331 @@
+{
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "duration": 107.075875,
+ "total_frames": 3212,
+ "timing": "aligned to narration pauses + Whisper word timestamps",
+ "shots": [
+  {
+   "scene": 1,
+   "start": 0.0,
+   "end": 6.6,
+   "frames": [
+    0,
+    198
+   ],
+   "background": "bus_stop_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "Hind sets off on the 5-day university trip expecting to spend it alone"
+  },
+  {
+   "scene": 2,
+   "start": 6.6,
+   "end": 14.6,
+   "frames": [
+    198,
+    438
+   ],
+   "background": "campus_walk_clean",
+   "characters": [
+    "Loreen"
+   ],
+   "event": "A girl who was not even one of her close friends changed all her expectations"
+  },
+  {
+   "scene": 3,
+   "start": 14.6,
+   "end": 17.65,
+   "frames": [
+    438,
+    530
+   ],
+   "background": "university_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "Hind was in her third year at university"
+  },
+  {
+   "scene": 4,
+   "start": 17.65,
+   "end": 23.55,
+   "frames": [
+    530,
+    706
+   ],
+   "background": "institute_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "Top of her institute, she entered the college directly in the second year"
+  },
+  {
+   "scene": 5,
+   "start": 23.55,
+   "end": 28.1,
+   "frames": [
+    706,
+    843
+   ],
+   "background": "computer_lab_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "So she had little time to get to know her classmates"
+  },
+  {
+   "scene": 6,
+   "start": 28.1,
+   "end": 35.0,
+   "frames": [
+    843,
+    1050
+   ],
+   "background": "university_clean",
+   "characters": [],
+   "event": "In the third year the university organised a 5-day scientific trip out of the city"
+  },
+  {
+   "scene": 7,
+   "start": 35.0,
+   "end": 38.45,
+   "frames": [
+    1050,
+    1154
+   ],
+   "background": "campus_garden_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "But Hind's two friends decided not to go"
+  },
+  {
+   "scene": 8,
+   "start": 38.45,
+   "end": 44.1,
+   "frames": [
+    1154,
+    1323
+   ],
+   "background": "campus_walk_clean",
+   "characters": [
+    "Loreen",
+    "Lizette"
+   ],
+   "event": "Among the girls going were Loreen and her friend Lizette"
+  },
+  {
+   "scene": 9,
+   "start": 44.1,
+   "end": 50.45,
+   "frames": [
+    1323,
+    1514
+   ],
+   "background": "campus_garden_clean",
+   "characters": [
+    "Loreen",
+    "Lizette"
+   ],
+   "event": "The two were inseparable"
+  },
+  {
+   "scene": 10,
+   "start": 50.45,
+   "end": 53.9,
+   "frames": [
+    1514,
+    1617
+   ],
+   "background": "university_clean",
+   "characters": [
+    "Loreen",
+    "Lizette"
+   ],
+   "event": "The whole college talked about their friendship"
+  },
+  {
+   "scene": 11,
+   "start": 53.9,
+   "end": 61.55,
+   "frames": [
+    1617,
+    1846
+   ],
+   "background": "campus_garden_clean",
+   "characters": [
+    "Loreen",
+    "Lizette",
+    "Hind"
+   ],
+   "event": "Her relationship with Hind was only that of classmates; Hind never imposes herself"
+  },
+  {
+   "scene": 12,
+   "start": 61.55,
+   "end": 65.9,
+   "frames": [
+    1846,
+    1977
+   ],
+   "background": "bus_stop_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "She prepared herself to spend most of the trip alone"
+  },
+  {
+   "scene": 13,
+   "start": 65.9,
+   "end": 71.9,
+   "frames": [
+    1977,
+    2157
+   ],
+   "background": "university_clean",
+   "characters": [
+    "Hind",
+    "Lizette",
+    "Loreen"
+   ],
+   "event": "At the university gate, Loreen welcomes her with great joy"
+  },
+  {
+   "scene": 14,
+   "start": 71.9,
+   "end": 76.5,
+   "frames": [
+    2157,
+    2295
+   ],
+   "background": "university_clean",
+   "characters": [
+    "Hind",
+    "Loreen"
+   ],
+   "event": "\"Hind! You are coming too? I am so happy to see you!\""
+  },
+  {
+   "scene": 15,
+   "start": 76.5,
+   "end": 79.2,
+   "frames": [
+    2295,
+    2376
+   ],
+   "background": "bus_stop_clean",
+   "characters": [
+    "Lizette",
+    "Loreen",
+    "Hind"
+   ],
+   "event": "As they boarded the bus, Loreen said..."
+  },
+  {
+   "scene": 16,
+   "start": 79.2,
+   "end": 82.45,
+   "frames": [
+    2376,
+    2474
+   ],
+   "background": "bus_interior_clean",
+   "characters": [
+    "Hind",
+    "Loreen"
+   ],
+   "event": "\"Each time we swap seats: once I sit next to Hind...\""
+  },
+  {
+   "scene": 17,
+   "start": 82.45,
+   "end": 84.3,
+   "frames": [
+    2474,
+    2529
+   ],
+   "background": "bus_interior_clean",
+   "characters": [
+    "Hind",
+    "Lizette"
+   ],
+   "event": "\"...and once Lizette sits next to her\""
+  },
+  {
+   "scene": 18,
+   "start": 84.3,
+   "end": 91.2,
+   "frames": [
+    2529,
+    2736
+   ],
+   "background": "bus_interior_clean",
+   "characters": [
+    "Hind"
+   ],
+   "event": "Hind, surprised: \"No Loreen, you two are close friends, it is fine for me to sit alone\""
+  },
+  {
+   "scene": 19,
+   "start": 91.2,
+   "end": 93.2,
+   "frames": [
+    2736,
+    2796
+   ],
+   "background": "bus_interior_clean",
+   "characters": [
+    "Loreen"
+   ],
+   "event": "But Loreen refused"
+  },
+  {
+   "scene": 20,
+   "start": 93.2,
+   "end": 99.9,
+   "frames": [
+    2796,
+    2997
+   ],
+   "background": "bus_interior_clean",
+   "characters": [
+    "Hind",
+    "Loreen"
+   ],
+   "event": "From that moment Hind began to discover a side of Loreen she had never known"
+  },
+  {
+   "scene": 21,
+   "start": 99.9,
+   "end": 102.9,
+   "frames": [
+    2997,
+    3087
+   ],
+   "background": "hotel_exterior_clean",
+   "characters": [],
+   "event": "But what Loreen did when they reached the hotel..."
+  },
+  {
+   "scene": 22,
+   "start": 102.9,
+   "end": 107.075875,
+   "frames": [
+    3087,
+    3212
+   ],
+   "background": "hotel_lobby_clean",
+   "characters": [
+    "Lizette",
+    "Hind",
+    "Loreen"
+   ],
+   "event": "...made Hind realise it was not just courtesy  (cliffhanger)"
+  }
+ ]
+}
