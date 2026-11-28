@@ -1,0 +1,13 @@
+{
+ "file": "Episode_01_Final.mp4",
+ "width": 1080,
+ "height": 1920,
+ "fps": "30/1",
+ "frames": 3212,
+ "video_codec": "h264",
+ "pix_fmt": "yuv420p",
+ "audio_codec": "aac",
+ "audio_duration": 107.076009,
+ "container_duration": 107.076009,
+ "narration_source_sha256": "5794d943e39066c410a0f377898d9d8b770946d716f698322f34135db5b4b784"
+}

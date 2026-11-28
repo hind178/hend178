@@ -11,3 +11,11 @@ Added a full-resolution empty hotel lobby and used it for the final cliffhanger 
 
 ## V5 handoff
 `render_v5.py` uses the six locked sprites, high-resolution bus and lab backgrounds, 13 editorial shots, subtle whole-sprite sway and camera motion. `preview_concat.txt` and `shot_previews/` reproduce the complete static storyboard with the original narration. The moving render was interrupted at 70 seconds by the execution time limit; do not present it as a completed video. The separate full storyboard MP4 is a timing preview, not animation. The bus inserts are upper-body crops, not verified seated poses; the lab is empty to avoid showing a suitcase in class. Hotel exterior replaces the low-resolution mountain road as an editorial transition. No licensed music supplied; original narration only. Remaining: create verified seated and articulated poses, align the actual Arabic narration, add cleared sound effects/music, and render and inspect full motion at 1080x1920/30fps. Do not regenerate the identities. Run verify_identity.py before and after.
+
+## V6 status
+Done: full 22-shot motion render at 1080x1920/30fps synced to the real narration; edge remnants removed with a
+min(alpha, ISNet matte) refinement (`characters/*/composite_v6.png`, made by `production/make_composite_sprites.py`;
+RGB pixels identical to cleaned_original, hashes in `production/composite_v6_lock.json`). Locked V3 files untouched.
+Still limited animation (whole-sprite motion only: walk bob, breathing, sway, hops, nods, camera, DOF, light).
+Not done / would need new approved art: articulated limbs, lip-sync, blinks, true seated poses (bus uses
+waist-up medium shots), music/SFX (none licensed).

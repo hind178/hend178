@@ -19,9 +19,9 @@ for i in range(len(R.SHOTS)):
     lst.append(f"file '{f.as_posix()}'")
 (scenes / 'concat.txt').write_text('\n'.join(lst) + '\n')
 
-# 2. concat (stream copy, identical encoder settings) + original narration
+# 2. concat (single final x264 pass) + original narration
 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', str(scenes / 'concat.txt'),
-                '-i', str(audio), '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k',
+                '-i', str(audio), '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'libx264', '-preset', 'slow', '-crf', '21', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '192k',
                 '-ar', '44100', '-movflags', '+faststart', str(out)], check=True)
 
 # 3. validate
