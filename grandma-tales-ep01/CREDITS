@@ -1,0 +1,16 @@
+My Grandmother's Tales — Episode 01 · 5-second style test
+
+Characters: Hind, Loreen, Lizette — designs from the user's own character reference sheets (refs/).
+Everything on screen is generated in code (three.js geometry, procedural canvas textures). No third-party images, models or HDRIs are used.
+
+Software
+- three.js r170 (MIT) — https://threejs.org — rendering, RoundedBoxGeometry, RoomEnvironment, FullScreenQuad
+- Lemo-Opuscar render tools (core/render) — headless capture and video assembly — see the library's LICENSE
+- FFmpeg — H.264 encoding
+
+Fonts (gate sign, drawn into a texture)
+- DejaVu Sans — Bitstream Vera / DejaVu licence (free) — https://dejavu-fonts.github.io
+- Inter — SIL Open Font License 1.1 — https://rsms.me/inter
+
+Audio: none in this test.
+The campus, the university name ("University of Zhian") and the bus livery are fictional.
